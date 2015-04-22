@@ -1,0 +1,37 @@
+{
+	"db":{
+		"host":"50.23.106.210",
+		"port":"27018",
+		"db":"iot_demo"
+	},
+	
+	"sensors":[
+	{
+		"name":"Water Usage Gal/15m",
+		"icon":"images/water_icon.png",
+		"minValue":0.0,
+		"maxValue":4.50,
+		"defaultValue":1.0,
+                "step":0.10,
+		"interval":5000,
+		"dbinfo":{
+			"table":"sensors_vti",
+			"fields":"{id:1,tstamp:'%tstamp',json_data:{gallons_used:%data}}"
+		}
+	},
+
+	{
+		"name":"Energy Usage kWh/15m ",
+		"icon":"images/outlet_icon.png",
+		"minValue":0.0,
+		"maxValue":3.50,
+		"step":0.10,
+		"defaultValue":0.25,
+		"interval":5000,
+		"dbinfo":{
+			"table":"sensors_vti",
+			"fields":"{id:2,tstamp:'%tstamp',json_data:{ kwh:%data }}"
+		}
+	}
+	]
+}

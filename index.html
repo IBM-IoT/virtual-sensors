@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+   	<head>
+   		<meta charset="UTF-8">
+   		<title>...</title>
+   		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
+   		<link rel="shortcut icon" href="images/favicon.png">
+   		<link href="jquery/jquery.mobile-1.4.2.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/main.css">
+   		<script src="jquery/jquery-1.11.1.js"></script>
+   		<script src="jquery/jquery.mobile-1.4.2.js"></script>
+   	</head>
+   	<body>
+		<div data-role="page" id="virtualSensorsPage">
+			<div data-role="header">
+				<h3>Sensors Dashboard</h3>
+			</div>
+			<div data-role="ui-content">
+				<div class="gridMenu" id="virtualSensorsMenu">
+
+				</div>
+			</div>
+			<div data-role="popup" id="configPopup">
+				<div id="cfgRandomRange" data-role="rangeslider" data-mini="true">
+					Random Range:<br>
+					<input type="range" min="0" max="1000" value="0">
+					<input type="range" min="0" max="1000" value="1000">
+				</div>
+				<div id="cfgIntervalRange" data-role="rangeslider" data-mini="true">
+					Interval Range:<br>
+					<input type="range" min="0" max="1" value="0">
+					<input type="range" min="0" max="1" value="1">
+				</div>
+			</div>
+		</div>
+   		<script src="js/database.js"></script>
+   		<script src="js/utils.js"></script>
+   		<script src="js/virtual.js"></script>
+   	</body>
+</html>

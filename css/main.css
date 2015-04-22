@@ -1,0 +1,122 @@
+/* Reset CSS */
+/* a, abbr, address, article, aside, audio, b, blockquote, body, canvas, caption, cite, code, dd, del, details, dfn, dialog, div, dl, dt, em, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, p, pre, q, samp, section, small, span, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, ul, var, video {
+	margin: 0;
+	padding: 0;
+} */
+
+/* General Styling */
+.gridMenu {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.gridMenu .ui-block-a {
+	float: none;
+	clear: none;
+	width: 100%;
+	font-size: 8pt;
+}
+
+.gridMenu .gridItem {
+	text-align: center;
+	font-weight: normal;
+	font-size: 10pt;
+	min-height: 188px;
+	width: 188px;
+	white-space: normal;
+	border-radius: 0.7em;
+	background-color: rgb(246,246,246);
+	border: 1px solid rgb(221,221,221);
+	margin: 5px;
+	padding: 5px;
+	float: left;
+}
+
+.gridItem img {
+	margin-top: -10px;
+}
+
+.sensorDot {
+	position: relative;
+	left: 4px;
+	top: 4px;
+	width: 8px;
+	min-height: 8px;
+	background-color: #F00;
+	border: solid 1px #000;
+	border-radius: 8px;
+}
+
+.sensorDot.sensorActiveTransition {
+	background-color: #AFA;
+	-webkit-transition: 0.6s;
+	-moz-transition: 0.6s;
+	-ms-transition: 0.6s;
+	-o-transition: 0.6s;
+	transition: 0.6s;
+}
+
+.sensorDot.sensorActivePulse {
+	background-color: #0C0;
+}
+
+.configBtn {
+	display: block;
+}
+
+#configPopup {
+	padding: 10px;
+	width: 300px;
+}
+
+@media all and ( max-width: 409px ) {
+	
+	.gridMenu {
+		width: 210px;
+	}
+}
+
+@media all and ( min-width: 420px ) {
+	
+	.gridMenu {
+		width: 420px;
+	}	
+}
+
+@media all and ( min-width: 630px ) {
+	
+	.gridMenu {
+		width: 630px;
+	}
+}
+
+@media all and ( min-width: 840px ) {
+	
+	.gridMenu {
+		width: 840px;
+	}
+}
+
+@media all and ( min-width: 1050px ) {
+	
+	.gridMenu {
+		width: 1050px;
+	}
+	
+	.CGraph .ui-rangeslider {
+		display: block;
+	}
+}
+
+@media all and ( min-width: 1260px ) {
+	
+	.gridMenu {
+		width: 1260px;
+	}
+	
+	/*.gridMenu .gridItem {
+		min-height: 180px;
+		width: 180px;
+		line-height: 150px;
+	}*/
+}

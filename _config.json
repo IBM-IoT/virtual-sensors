@@ -1,0 +1,59 @@
+{
+	"db":{
+		"host":"198.23.75.155",
+		"port":"9090",
+		"db":"iot_demo_reg"
+	},
+	
+	"sensors":[
+	{
+		"name":"Humidity 5s",
+		"icon":"images/water_icon.png",
+		"minValue":20,
+		"maxValue":96,
+		"defaultValue":50,
+		"interval":5000,
+		"dbinfo":{
+			"table":"city_humidity_vti",
+			"fields":"{city_id:1,tstamp:'%tstamp',humidity:%data}"
+		}
+	},
+	{
+		"name":"Temperature 5s",
+		"icon":"images/temp_icon.png",
+		"minValue":70,
+		"maxValue":85,
+		"defaultValue":70,
+		"interval":5000,
+		"dbinfo":{
+			"table":"city_temp_vti",
+			"fields":"{city_id:1,tstamp:'%tstamp',temp_f:%data}"
+		}
+	},
+
+	{
+		"name":"JSON Test",
+		"icon":"images/json_icon.png",
+		"minValue":0,
+		"maxValue":100,
+		"defaultValue":50,
+		"interval":1000,
+		"dbinfo":{
+			"table":"sensors_vti",
+			"fields":"{id:1,tstamp:'%tstamp',json_data:{ temp_f:%data }}"
+		}
+	},
+	{
+		"name":"JSON Test 2",
+		"icon":"images/outlet_icon.png",
+		"minValue":0,
+		"maxValue":100,
+		"defaultValue":50,
+		"interval":1000,
+		"dbinfo":{
+			"table":"sensors_vti",
+			"fields":"{id:2,tstamp:'%tstamp',json_data:{ temp_f:%data }}"
+		}
+	}
+	]
+}
